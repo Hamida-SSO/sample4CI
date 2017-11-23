@@ -1,3 +1,4 @@
+package identity;
 public class User {
 
     private Long id;
@@ -13,8 +14,16 @@ public class User {
     public void setLastName(String lastName) {
         this.lastName = "lastName=" + lastName;
     }
+/*
+    public Long getId() {
+		return id;
+	}
 
-    public String getFirstName() {
+	public void setId(Long id) {
+		this.id = id;
+	}*/
+
+	public String getFirstName() {
         return firstName;
     }
 
