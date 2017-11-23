@@ -2,8 +2,6 @@ package identity;
 
 import org.junit.Test;
 
-import identity.User;
-
 public class UserTest {
 
     @Test

@@ -1,21 +1,22 @@
 package identity;
+
 public class User {
 
-    private Long id;
+	private Long id;
 
-    private String lastName;
+	private String lastName;
 
-    private String firstName;
+	private String firstName;
 
-    public String getLastName() {
-        return lastName;
-    }
+	public String getLastName() {
+		return lastName;
+	}
 
-    public void setLastName(String lastName) {
-        this.lastName = "lastName=" + lastName;
-    }
+	public void setLastName(String lastName) {
+		this.lastName = "lastName=" + lastName;
+	}
 
-    public Long getId() {
+	public Long getId() {
 		return id;
 	}
 
@@ -24,14 +25,14 @@ public class User {
 	}
 
 	public String getFirstName() {
-        return firstName;
-    }
+		return firstName;
+	}
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
 
-    @Override
+	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
@@ -41,21 +42,23 @@ public class User {
 		return result;
 	}
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+	@Override
+	public boolean equals(Object o) {
+		if (this == o)
+			return true;
+		if (o == null || getClass() != o.getClass())
+			return false;
 
-        User user = (User) o;
+		User user = (User) o;
 
-        return id.equals(user.id);
-    }
+		return id.equals(user.id);
+	}
 
-    @Override
-    public String toString() {
-        if (id == null) {
-            return "";
-        }
-        return "id=" + id + ", lastName=" + lastName + ", firstName=" + firstName;
-    }
+	@Override
+	public String toString() {
+		if (id == null) {
+			return "";
+		}
+		return "id=" + id + ", lastName=" + lastName + ", firstName=" + firstName;
+	}
 }
