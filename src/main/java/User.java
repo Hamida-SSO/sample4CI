@@ -1,6 +1,6 @@
 public class User {
 
-    public Long id;
+    private Long id;
 
     private String lastName;
 
